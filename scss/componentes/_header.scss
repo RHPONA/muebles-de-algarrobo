@@ -1,0 +1,42 @@
+header{
+    background-color: #28c4cf;
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 20px;            
+    }
+    h1{
+        text-align: center;
+        color: #242d2b;
+    }
+    nav{
+        menu{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 5px;
+            margin: 5px;
+        }
+        ul{
+            list-style: none;
+            font-size: 1.5rem;
+            ul{
+                list-style: none;
+                font-size: 1.5rem;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: #242d2b;
+                        &:hover{
+                            text-decoration: overline;
+                            background-color:#b02628;
+                            color:#2F2F2F;
+                            justify-content: space-between;
+                        }
+                    }
+                }            
+            }
+        }
+        
+    }
+}

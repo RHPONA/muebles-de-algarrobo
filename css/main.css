@@ -1,0 +1,302 @@
+@charset "UTF-8";
+/*estilo global*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+html {
+  font-size: 16px; /*Cambia la medida rem de 16px a 10px*/
+  font-family: "Afacad", sans-serif;
+  color: rgb(17, 15, 15);
+}
+
+h2 {
+  color: #2ab0bd;
+  text-align: center;
+  font-size: 40px;
+  background-color: #5623d6;
+  padding: 20px;
+}
+
+header {
+  background-color: #28c4cf;
+}
+header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+}
+header h1 {
+  text-align: center;
+  color: #242d2b;
+}
+header nav menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 5px;
+}
+header nav ul {
+  list-style: none;
+  font-size: 1.5rem;
+}
+header nav ul ul {
+  list-style: none;
+  font-size: 1.5rem;
+}
+header nav ul ul li a {
+  text-decoration: none;
+  color: #242d2b;
+}
+header nav ul ul li a:hover {
+  text-decoration: overline;
+  background-color: #b02628;
+  color: #2F2F2F;
+  justify-content: space-between;
+}
+
+/*esta es la seccion index*/
+.main-index {
+  background-color: rgba(46, 46, 125, 0.404);
+}
+.main-index .M {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 30hv);
+  color: black;
+  margin: 1fr 2fr 2fr 2fr;
+  gap: 0.5rem;
+  margin-bottom: 20px;
+}
+.main-index .M div img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.main-index .M div img:hover {
+  border: #19c6e1 3px solid;
+  border-radius: 10px;
+}
+
+/*formulario de contacto*/
+.main-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d67272;
+}
+.main-contacto .conta-0 {
+  display: flex;
+  flex-direction: column;
+  column-gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  width: 50%;
+  padding: 30px;
+  margin: 15px;
+  line-height: 2cap;
+  border: 5px solid #434db7;
+  border-radius: 30px;
+  text-align: center;
+  background-color: #146a72;
+}
+.main-contacto .conta-0 form {
+  background-color: rgba(54, 180, 202, 0.9254901961);
+}
+
+/*diseño de la galeria*/
+.main-galeria {
+  display: flex;
+  flex-direction: column;
+  background-color: #334739;
+  color: #263128;
+}
+.main-galeria .h2 {
+  color: #20652c;
+  text-align: center;
+  font-size: 40px;
+  background-color: #aea3ca;
+  padding: 20px;
+}
+.main-galeria .h2 .galerias-1 {
+  display: flex;
+  background-color: #4e4c52;
+  padding: 15px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 5px;
+  row-gap: 10px;
+  justify-content: space-evenly;
+}
+.main-galeria .h2 .galerias-1 img {
+  border-radius: 3px 15px;
+  max-width: 40%;
+  border: #0bbf47 2px solid;
+}
+.main-galeria .h2 .galerias-1 img:hover {
+  border: #19c6e1 3px solid;
+}
+
+/* SECCION MODELOS*/
+.main-modelos .modelo div p {
+  color: #32276f;
+  margin: 30px;
+  padding: 10px;
+}
+.main-modelos .modelos1 .model {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.main-modelos .modelos1 .model img {
+  border-radius: 3px;
+  max-width: 30%;
+  border: #b6cdd3 2px solid;
+  object-fit: cover;
+}
+.main-modelos .modelos1 .model img:hover {
+  border: #267c72 2px solid;
+}
+
+/* seccion nosotross*/
+.main-nosotros .carousel-inner {
+  object-fit: cover;
+}
+.main-nosotros .historia div h3 {
+  background-color: #594a7e;
+  text-align: center;
+  text-decoration: underline;
+}
+.main-nosotros .historia div .historia1 {
+  text-align: justify;
+  padding: 10px;
+  margin: 5px;
+  color: #3f4340;
+}
+
+/*esto es el footer*/
+footer {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  border-radius: 5px;
+  padding: 25px;
+  margin: 20px;
+}
+footer a {
+  font-size: 1.4rem;
+  color: rgb(180, 144, 144);
+  display: flex;
+  margin-top: 2px;
+  flex-direction: column;
+  justify-items: flex-start;
+  align-items: flex-end;
+  font-family: Verdana Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+/* Estilos para dispositivos con un ancho máximo de 368px */
+@media screen and (max-width: 368px) {
+  header {
+    padding: 10px;
+    text-align: center;
+  }
+  header img {
+    max-width: 150px; /* Ajusta el ancho máximo del logo */
+  }
+  header h1 {
+    font-size: 1.5rem; /* Ajusta el tamaño de fuente del título */
+  }
+  .main-nosotros .carousel-inner img {
+    height: 300px; /* Ajusta la altura de las imágenes del carrusel */
+  }
+  .main-nosotros .historia1 {
+    padding: 10px; /* Añade espacio alrededor del texto */
+  }
+  .main-nosotros .main-contacto .contac form {
+    padding: 10px;
+  }
+  .main-nosotros .main-contacto .contac form ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-nosotros footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-nosotros footer a {
+    margin: 5px; /* Espacio entre los enlaces */
+  }
+}
+/* Estilos para dispositivos con un ancho mínimo de 368px y máximo de 768px */
+@media screen and (min-width: 368px) and (max-width: 768px) {
+  /*SE APLICA PARA A LA SECCION CONTACTO*/
+  header {
+    padding: 20px;
+  }
+  header img {
+    max-width: 200px; /* Ajusta el ancho máximo del logo */
+  }
+  header h1 {
+    font-size: 2rem; /* Ajusta el tamaño de fuente del título */
+  }
+  .main-nosotros .carousel-inner div img {
+    height: 400px; /*altura de las imágenes del carrusel */
+  }
+  .main-nosotros .carousel-inner .historia1 {
+    padding: 20px; /* espacio alrededor del texto */
+  }
+  .main-contacto .contac form {
+    padding: 20px;
+  }
+  .main-contacto .contac form ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  footer {
+    justify-content: space-around;
+    padding: 10px;
+  }
+}
+/* Estilos para dispositivos con un ancho mínimo de 768px y máximo de 1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    padding: 30px;
+  }
+  header img {
+    max-width: 250px; /* Ajusta el ancho máximo del logo */
+  }
+  header h1 {
+    font-size: 2.5rem; /* Ajusta el tamaño de fuente del título */
+  }
+  .main-nosotros .carousel-inner div img {
+    height: 500px;
+  }
+  .main-nosotros .carousel-inner .historia div .historia1 {
+    padding: 30px;
+  }
+  /* SE APLICAN ESTILOS A LA SECCION CONTACTO*/
+  .main-contacto .contac form {
+    padding: 30px;
+  }
+  .main-contacto .contac form ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer {
+    justify-content: space-between;
+    padding: 20px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

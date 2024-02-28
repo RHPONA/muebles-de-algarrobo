@@ -1,0 +1,22 @@
+/* seccion nosotross*/
+.main-nosotros{
+    .carousel-inner{
+        object-fit: cover;
+        }
+    .historia{
+        div{
+            h3{
+                background-color: #594a7e;
+                text-align: center;
+                text-decoration: underline;
+            }
+            .historia1{
+                text-align: justify;
+                padding: 10px;
+                margin: 5px;
+                color: #3f4340;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,32 @@
+/*diseño de la galeria*/
+.main-galeria{
+    display: flex;
+    flex-direction: column;
+    background-color: #334739;
+    color: #263128;
+    .h2{
+        color: #20652c;
+        text-align: center;
+        font-size: 40px;
+        background-color: #aea3ca;
+        padding: 20px;
+    .galerias-1{
+        display: flex;
+        background-color: #4e4c52;
+        padding: 15px;
+        flex-direction: row;
+        flex-wrap:wrap;
+        column-gap: 5px;
+        row-gap: 10px;
+        justify-content:space-evenly;
+        img{
+            border-radius:3px 15px;
+            max-width: 40%;
+            border:#0bbf47 2px solid;
+            &:hover{
+                border:#19c6e1 3px solid;
+                }
+            }
+        }
+    }
+}
