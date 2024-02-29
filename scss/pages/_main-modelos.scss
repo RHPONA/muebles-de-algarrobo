@@ -1,0 +1,37 @@
+/* SECCION MODELOS*/
+.main-modelos {
+    .modelo {
+    div {
+        h3 {
+        text-align: center;
+        text-decoration: overline;
+        }
+        p {
+        color: #32276f;
+        margin: 30px;
+        padding: 10px;
+        }
+        }
+    }
+    .modelos1 {
+    h3{
+        text-align: center;
+        text-decoration: overline;
+    }
+    .model {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        img {
+            border-radius: 3px;
+            max-width: 30%;
+            border: #b6cdd3 2px solid;
+            object-fit: cover;
+            &:hover {
+                border: #267c72 2px solid;
+            }
+        }
+        }
+    }
+}

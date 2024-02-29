@@ -1,0 +1,20 @@
+/*diseño de la galeria*/
+.main-galeria {
+    background-color: #819286;
+    .galerias-1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        img {
+            border-radius: 3px;
+            max-width: 30%;
+            border: #b6cdd3 2px solid;
+            object-fit: cover;
+            &:hover {
+                border: #267c72 2px solid;
+            }
+        }
+        }
+    }
+

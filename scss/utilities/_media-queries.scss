@@ -1,0 +1,134 @@
+/* Estilos para dispositivos con un ancho máximo de 368px */
+@media screen and (max-width: 368px) {
+    header {
+        padding: 10px;
+        text-align: center;
+        img {
+            max-width: 150px; /* Ajusta el ancho máximo del logo */
+        }
+    
+        h1 {
+            font-size: 1.5rem; /* Ajusta el tamaño de fuente del título */
+        }
+    }
+    .main-nosotros{
+        .carousel-inner img {
+            height: 300px; /* Ajusta la altura de las imágenes del carrusel */
+            }
+        .historia1 {
+            padding: 10px; /* Añade espacio alrededor del texto */
+        }
+        .main-contacto{
+            .contac{
+                form{
+                    padding: 10px;
+                    ul{
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        a {
+            margin: 5px; /* Espacio entre los enlaces */
+        }
+    }    
+    }
+}
+
+
+/* Estilos para dispositivos con un ancho mínimo de 368px y máximo de 768px */
+@media screen and (min-width: 368px) and (max-width: 768px) {
+    /*SE APLICA PARA A LA SECCION CONTACTO*/
+    header {
+        padding: 20px;
+            img {
+                max-width: 200px; /* Ajusta el ancho máximo del logo */
+            }
+            h1 {
+                font-size: 2rem; /* Ajusta el tamaño de fuente del título */
+            }
+    }
+    .main-nosotros{
+        .carousel-inner{
+            div{
+                img {
+                    height: 400px; /*altura de las imágenes del carrusel */
+                }
+            }
+            .historia1 {
+                padding: 20px; /* espacio alrededor del texto */
+            }
+        } 
+    }
+    
+    .main-contacto{
+        .contac{
+            form{
+                padding: 20px;
+                ul{
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+            }
+        }
+    }
+    footer {
+        justify-content: space-around;
+        padding: 10px;
+    }
+    
+    
+}
+
+
+
+/* Estilos para dispositivos con un ancho mínimo de 768px y máximo de 1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    header {
+        padding: 30px;
+        img {
+            max-width: 250px; /* Ajusta el ancho máximo del logo */
+        }
+        h1 {
+            font-size: 2.5rem; /* Ajusta el tamaño de fuente del título */
+        }
+    }
+    .main-nosotros{
+        .carousel-inner{
+            div{
+                img {
+                    height: 500px; 
+                }
+            }
+            
+        .historia{
+            div{
+                .historia1{
+                    padding: 30px; 
+                }
+            }
+        }
+    }
+    }
+    
+    /* SE APLICAN ESTILOS A LA SECCION CONTACTO*/
+    .main-contacto{
+    .contac{
+        form{
+            padding: 30px;
+            ul{
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+        }
+    }
+    footer {
+    justify-content: space-between;
+    padding: 20px;
+    }
+}

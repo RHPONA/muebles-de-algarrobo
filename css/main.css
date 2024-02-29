@@ -1,0 +1,335 @@
+@charset "UTF-8";
+/*estilo global*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+html {
+  font-size: 16px; /*Cambia la medida rem de 16px a 10px*/
+  font-family: "Afacad", sans-serif;
+  color: rgb(17, 15, 15);
+}
+
+h2 {
+  color: #a7432a;
+  text-align: center;
+  font-size: 40px;
+  background-color: #3cdbb8;
+  padding: 20px;
+}
+
+header {
+  background-color: rgb(175, 208, 210);
+  color: rgb(46, 53, 50);
+  padding: 50px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+}
+header img {
+  border-radius: 15px;
+}
+header img:hover {
+  transform: rotate(360deg);
+  transition: transform 1s;
+  cursor: pointer;
+}
+
+nav {
+  padding: 10px 40px 10px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+nav ul {
+  list-style: none;
+  font-size: 0;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(55, 86, 163);
+  font-size: 16px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgb(55, 86, 163);
+  text-transform: uppercase;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+nav ul li:hover ul {
+  display: block;
+}
+nav ul ul {
+  position: absolute;
+  display: none;
+  padding: 5px;
+  line-height: 10px;
+  background-color: rgb(199, 206, 219);
+  opacity: 0.8;
+}
+nav ul ul li {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: rgb(156, 80, 14);
+}
+
+a:hover {
+  background-size: 100% 2px;
+}
+a:focus {
+  background-size: 100% 2px;
+}
+
+/*esta es la seccion index*/
+.main-index {
+  background-color: rgba(46, 46, 125, 0.404);
+}
+.main-index .M {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 30hv);
+  color: black;
+  margin: 1fr 2fr 2fr 2fr;
+  gap: 0.5rem;
+  margin-bottom: 20px;
+}
+.main-index .M div img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.main-index .M div img:hover {
+  border: #19c6e1 3px solid;
+  border-radius: 10px;
+}
+
+/*formulario de contacto*/
+.main-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d67272;
+}
+.main-contacto .conta-0 {
+  display: flex;
+  flex-direction: column;
+  column-gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  width: 50%;
+  padding: 30px;
+  margin: 15px;
+  line-height: 2cap;
+  border: 5px solid #434db7;
+  border-radius: 30px;
+  text-align: center;
+  background-color: #146a72;
+}
+.main-contacto .conta-0 form {
+  background-color: rgba(54, 180, 202, 0.9254901961);
+}
+
+/*diseño de la galeria*/
+.main-galeria {
+  background-color: #819286;
+}
+.main-galeria .galerias-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.main-galeria .galerias-1 img {
+  border-radius: 3px;
+  max-width: 30%;
+  border: #b6cdd3 2px solid;
+  object-fit: cover;
+}
+.main-galeria .galerias-1 img:hover {
+  border: #267c72 2px solid;
+}
+
+/* SECCION MODELOS*/
+.main-modelos .modelo div h3 {
+  text-align: center;
+  text-decoration: overline;
+}
+.main-modelos .modelo div p {
+  color: #32276f;
+  margin: 30px;
+  padding: 10px;
+}
+.main-modelos .modelos1 h3 {
+  text-align: center;
+  text-decoration: overline;
+}
+.main-modelos .modelos1 .model {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.main-modelos .modelos1 .model img {
+  border-radius: 3px;
+  max-width: 30%;
+  border: #b6cdd3 2px solid;
+  object-fit: cover;
+}
+.main-modelos .modelos1 .model img:hover {
+  border: #267c72 2px solid;
+}
+
+/* seccion nosotross*/
+.main-nosotros .carousel-inner {
+  object-fit: cover;
+}
+.main-nosotros .historia div h3 {
+  background-color: #594a7e;
+  text-align: center;
+  text-decoration: underline;
+}
+.main-nosotros .historia div .historia1 {
+  text-align: justify;
+  padding: 10px;
+  margin: 5px;
+  color: #3f4340;
+}
+
+/*esto es el footer*/
+footer {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  border-radius: 5px;
+  padding: 25px;
+  margin: 20px;
+}
+footer a {
+  font-size: 1.4rem;
+  color: rgb(180, 144, 144);
+  display: flex;
+  margin-top: 2px;
+  flex-direction: column;
+  justify-items: flex-start;
+  align-items: flex-end;
+  font-family: Verdana Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+/* Estilos para dispositivos con un ancho máximo de 368px */
+@media screen and (max-width: 368px) {
+  header {
+    padding: 10px;
+    text-align: center;
+  }
+  header img {
+    max-width: 150px; /* Ajusta el ancho máximo del logo */
+  }
+  header h1 {
+    font-size: 1.5rem; /* Ajusta el tamaño de fuente del título */
+  }
+  .main-nosotros .carousel-inner img {
+    height: 300px; /* Ajusta la altura de las imágenes del carrusel */
+  }
+  .main-nosotros .historia1 {
+    padding: 10px; /* Añade espacio alrededor del texto */
+  }
+  .main-nosotros .main-contacto .contac form {
+    padding: 10px;
+  }
+  .main-nosotros .main-contacto .contac form ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-nosotros footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-nosotros footer a {
+    margin: 5px; /* Espacio entre los enlaces */
+  }
+}
+/* Estilos para dispositivos con un ancho mínimo de 368px y máximo de 768px */
+@media screen and (min-width: 368px) and (max-width: 768px) {
+  /*SE APLICA PARA A LA SECCION CONTACTO*/
+  header {
+    padding: 20px;
+  }
+  header img {
+    max-width: 200px; /* Ajusta el ancho máximo del logo */
+  }
+  header h1 {
+    font-size: 2rem; /* Ajusta el tamaño de fuente del título */
+  }
+  .main-nosotros .carousel-inner div img {
+    height: 400px; /*altura de las imágenes del carrusel */
+  }
+  .main-nosotros .carousel-inner .historia1 {
+    padding: 20px; /* espacio alrededor del texto */
+  }
+  .main-contacto .contac form {
+    padding: 20px;
+  }
+  .main-contacto .contac form ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  footer {
+    justify-content: space-around;
+    padding: 10px;
+  }
+}
+/* Estilos para dispositivos con un ancho mínimo de 768px y máximo de 1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    padding: 30px;
+  }
+  header img {
+    max-width: 250px; /* Ajusta el ancho máximo del logo */
+  }
+  header h1 {
+    font-size: 2.5rem; /* Ajusta el tamaño de fuente del título */
+  }
+  .main-nosotros .carousel-inner div img {
+    height: 500px;
+  }
+  .main-nosotros .carousel-inner .historia div .historia1 {
+    padding: 30px;
+  }
+  /* SE APLICAN ESTILOS A LA SECCION CONTACTO*/
+  .main-contacto .contac form {
+    padding: 30px;
+  }
+  .main-contacto .contac form ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer {
+    justify-content: space-between;
+    padding: 20px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
