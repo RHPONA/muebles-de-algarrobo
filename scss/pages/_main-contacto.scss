@@ -1,26 +1,22 @@
 /*formulario de contacto*/
 .main-contacto{
-        display: flex;
-        flex-direction: column;
+    @include flex(column, center, center);
+    background-color: #d67272;
+    .conta-0{
+        @include flex(column, center, center);
+        column-gap: 10px;
         justify-content: center;
-        align-items: center;
-        background-color: #d67272;
-        .conta-0{
-            display: flex;
-            flex-direction: column;
-            column-gap: 10px;
-            justify-content: center;
-            justify-items: center;
-            width: 50%;
-            padding: 30px;
-            margin: 15px;
-            line-height: 2cap;
-            border: 5px solid #434db7;
-            border-radius: 30px;
-            text-align: center;
-            background-color: #146a72;
-                form{
-                    background-color: #36b4caec;
-                    }
-            }
+        justify-items: center;
+        width: 50%;
+        padding: 30px;
+        margin: 15px;
+        line-height: 2cap;
+        border: 5px solid #434db7;
+        border-radius: 30px;
+        text-align: center;
+        background-color: nth($list: $colores, $n: 4 );
+        form{
+            background-color: $color-principal;
+        }
+    }
 }

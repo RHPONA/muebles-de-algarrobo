@@ -14,10 +14,10 @@ html {
 }
 
 h2 {
-  color: #a7432a;
+  color: #0f0a09;
   text-align: center;
-  font-size: 40px;
-  background-color: #3cdbb8;
+  font-size: 35px;
+  background-color: #cad5d3;
   padding: 20px;
 }
 
@@ -45,7 +45,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
 }
 nav ul {
@@ -53,6 +53,9 @@ nav ul {
   font-size: 0;
 }
 nav ul li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: flex-start;
   list-style: none;
   display: inline-block;
   text-decoration: none;
@@ -79,13 +82,13 @@ nav ul ul {
   position: absolute;
   display: none;
   padding: 5px;
-  line-height: 10px;
+  line-height: 100px;
   background-color: rgb(199, 206, 219);
   opacity: 0.8;
 }
 nav ul ul li {
   display: block;
-  font-size: 14px;
+  font-size: 20px;
   text-transform: uppercase;
   background-color: rgb(156, 80, 14);
 }
@@ -125,13 +128,15 @@ a:focus {
 .main-contacto {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   background-color: #d67272;
 }
 .main-contacto .conta-0 {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   column-gap: 10px;
   justify-content: center;
   justify-items: center;
@@ -142,10 +147,10 @@ a:focus {
   border: 5px solid #434db7;
   border-radius: 30px;
   text-align: center;
-  background-color: #146a72;
+  background-color: rgb(26, 100, 130);
 }
 .main-contacto .conta-0 form {
-  background-color: rgba(54, 180, 202, 0.9254901961);
+  background-color: rgb(78, 165, 145);
 }
 
 /*diseño de la galeria*/
@@ -195,7 +200,7 @@ a:focus {
   object-fit: cover;
 }
 .main-modelos .modelos1 .model img:hover {
-  border: #267c72 2px solid;
+  border: rgb(78, 165, 145) 2px solid;
 }
 
 /* seccion nosotross*/
