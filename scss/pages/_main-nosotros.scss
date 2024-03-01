@@ -11,10 +11,10 @@
                 text-decoration: underline;
             }
             .historia1{
+                @extend %estilos;
                 text-align: justify;
                 padding: 10px;
                 margin: 5px;
-                color: #3f4340;
             }
         }
     }
